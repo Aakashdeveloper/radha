@@ -1,0 +1,42 @@
+body{
+	background:linear-gradient(to left top, red, yellow); 
+	background:-webkit-linear-gradient(to left top, red, yellow); 
+	background:-o-linear-gradient(to left top, red, yellow); 
+	background:-moz-linear-gradient(to left top, red, yellow); 
+
+}
+h1{
+	text-shadow:2px 2px lightblue;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "Times New Roman";
+}
+a{
+	text-decoration: none;
+}
+table, th, td{
+	border: 1px solid black;
+}
+#menu{
+	height: 30px;
+	width:100%;
+	background-color: black;
+	position: fixed;
+	opacity: 0.8;
+	margin-top:-12px;
+
+}
+#first{
+	height:200px;
+	width: 200px;
+	background-color: red;
+	box-shadow: 20px 20px 10px green;
+	border-radius: 100px;
+	border:5px double black;
+}
+#second{
+	height:200px;
+	width: 200px;
+	background-color: yellow;
+	border-radius: 100px 80px;
+}
