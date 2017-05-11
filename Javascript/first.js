@@ -54,3 +54,28 @@ var a = ["dv","dd","dsvdf","df"];
 
 var a=[1,3,"xcv","dsv",434,true]
 var a = [1,2,3,[8,9,7,[5,2,4]],4,56,45,561];
+
+//////////////////////////////split////
+document.URL
+"https://www.youtube.com/watch?v=ucMJu94UpTM"
+var a =document.URL;
+undefined
+a
+"https://www.youtube.com/watch?v=ucMJu94UpTM"
+var b = a.split("/")
+undefined
+b
+(4) ["https:", "", "www.youtube.com", "watch?v=ucMJu94UpTM"]
+b[3]
+"watch?v=ucMJu94UpTM"
+
+var b = a.split('/')
+undefined
+b.length
+6
+b.length-1
+5
+var b = a.split('/')[b.length-1]
+undefined
+b
+"watch?v=ucMJu94UpTM"
