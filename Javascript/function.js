@@ -8,6 +8,7 @@ function radha(a,b){
 	add(one,two);
 }
 
+//method
 var add = function(a,b){
 	return a+b;
 }
