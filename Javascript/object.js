@@ -52,3 +52,12 @@ var animal ={
 	}
 }
 animal.age(10)
+
+
+var car ={
+	wheel:4,
+	sidemirror:2
+}
+
+
+var bmw = new car();
