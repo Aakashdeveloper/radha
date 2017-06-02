@@ -60,4 +60,11 @@ var car ={
 }
 
 
-var bmw = new car();
+function car(){
+	this.wheel = 4;
+	this.color="red"
+}
+
+var bmw = new car()
+
+
