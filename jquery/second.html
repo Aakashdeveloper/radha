@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>JS Bin</title>
+  <style type="text/css">
+    .hidden {
+      display: none;
+    }
+    .red{
+      color:red;
+      font-size: 50px;
+    }
+    .blue{
+      color:blue;
+      font-size: 80px;
+    }
+  </style>
+  <script>
+  function doHelloWorld() {
+     $('.js-hide-it').addClass('hidden');
+     $('.js-hello-world').text('hello world from JS');
+  }
+
+  function doHelloWorld1() {
+     $('.js-hide-it').removeClass('hidden');
+  }
+
+  function redme(){
+    console.log("i am here")
+    $('.changeme').removeClass('blue');
+    $('.changeme').addClass('red');
+
+  }
+  function blueme(){
+    $('.changeme').removeClass('red');
+    $('.changeme').addClass('blue');
+  }
+
+   function resetme(){
+    $('.changeme').removeClass('red');
+    $('.changeme').removeClass('blue');
+  }
+
+  </script>
+</head>
+<body>
+
+  <h1 class="changeme">Hello from original HTML</h1>
+  <input type="button" onclick="redme();" value="red">
+   <input type="button" onclick="blueme();" value="blue">
+   <input type="button" onclick="resetme()" value="reset">
+
+  <h1 class="js-hide-it">Hello from original HTML</h1>
+  <p class="js-hello-world"></p>
+  <ul>
+    <li class="js-hello-world"></li>
+  </ul>
+  <input type="submit" onclick="doHelloWorld();">
+  <input type="submit" value="Reset" onclick="doHelloWorld1();">
+  
+  <script>
+    
+  </script>
+  
+  
+  <!--  normally you'd link to your app.js here, below jquery 
+        but since this is a JSBIN you don't do that
+  -->
+</body>
+</html>
